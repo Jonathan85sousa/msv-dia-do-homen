@@ -1,0 +1,345 @@
+/* Estilos Gerais (mantido do anterior) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Fundo padrão, você pode substituir pela sua imagem */
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Se for usar uma imagem de background */
+body.custom-background {
+    background-image: url('./img/fundo1.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Para que o background não role com o conteúdo */
+    color: #fff; /* Altere a cor do texto para contrastar com seu background */
+}
+
+/* Estilo do Cabeçalho (mantido do anterior) */
+.header {
+    background-color: #ffffff; /* Cor primária */
+    color: #006633;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo {
+    max-width: 120px; /* Ajuste o tamanho do seu logo */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+/* Conteúdo Principal do Aplicativo (mantido do anterior) */
+#app-content {
+    flex-grow: 1; /* Faz o conteúdo principal ocupar o espaço restante */
+    padding: 20px;
+    display: flex; /* Para controlar os slides */
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
+    overflow: hidden; /* Garante que apenas o slide ativo seja visível */
+}
+
+.slide {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 25px;
+    margin: 15px auto;
+    max-width: 600px; /* Largura máxima para legibilidade em telas maiores */
+    width: 100%;
+    box-sizing: border-box;
+    display: none; /* Oculta todos os slides por padrão */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.slide.active {
+    display: block; /* Mostra o slide ativo */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide h2 {
+    color: #006633; /* Cor do título do tópico */
+    font-size: 1.6em;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.slide h3 {
+    color: #006633; /* Cor dos subtítulos */
+    font-size: 1.3em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.slide ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.slide li {
+    margin-bottom: 8px;
+}
+
+.action-tip {
+    font-style: italic;
+    color: #006633;
+    text-align: center;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.signature {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 1.1em;
+    color: #006633;
+}
+
+/* Estilo para <details> (Curiosidades) - mantido do anterior */
+details {
+    background-color: #e9ecef;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border: 1px solid #ced4da;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #006633;
+    list-style: none; /* Remove o marcador padrão */
+}
+
+summary::before { /* Adiciona um ícone de seta customizado */
+    content: "▶";
+    display: inline-block;
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+/* Estilos para as imagens dos tópicos (mantido do anterior) */
+.topic-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.topic-image img {
+    max-width: 100%; /* Garante que a imagem não transborde o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas arredondadas para um visual mais suave */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Sutil sombra */
+}
+
+/* Novos estilos para links de vídeo */
+.video-link-container {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px dashed #ced4da; /* Linha tracejada para separar */
+}
+
+.video-link-container p {
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+.video-button {
+    display: inline-block;
+    background-color: #006633; /* Vermelho, para YouTube */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none; /* Remove sublinhado do link */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.video-button:hover {
+    background-color: #01331a;
+    transform: translateY(-2px);
+}
+
+.video-button:active {
+    transform: translateY(0);
+}
+
+.video-link-container .note {
+    font-size: 0.85em;
+    color: #888;
+    margin-top: 10px;
+}
+
+
+/* Navegação Principal (Botões dos Tópicos) - mantido do anterior */
+.topic-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.topic-navigation button, .nav-btn, .back-to-start {
+    background-color: #006633; /* Azul vibrante */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    flex-grow: 1; /* Faz os botões crescerem para ocupar o espaço */
+    max-width: 200px; /* Limita a largura dos botões */
+    text-align: center;
+}
+
+.topic-navigation button:hover, .nav-btn:hover, .back-to-start:hover {
+    background-color: #0a0a0a;
+    transform: translateY(-2px);
+}
+
+.topic-navigation button:active, .nav-btn:active, .back-to-start:active {
+    transform: translateY(0);
+}
+
+/* Botões de Navegação (Anterior/Próximo) - mantido do anterior */
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    position: sticky; /* Fixa no final da tela */
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-btn {
+    width: 48%; /* Ocupa quase metade do espaço */
+    font-size: 1.1em;
+}
+
+.back-to-start {
+    margin-top: 20px;
+    display: block; /* Garante que o botão ocupe sua própria linha */
+    width: auto; /* Ajusta a largura ao conteúdo */
+    padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ocultar botões de navegação no slide de introdução (mantido do anterior) */
+#slide-intro + .navigation-buttons .nav-btn {
+    display: none;
+}
+
+/* Esconder botão "Anterior" no primeiro slide de conteúdo (mantido do anterior) */
+.slide.active:first-of-type + .navigation-buttons #prev-btn {
+    display: none; /* Este CSS precisa ser gerenciado pelo JS para ser dinâmico */
+}
+
+
+/* Responsividade para Telas Menores (Smartphones) - mantido do anterior com ajustes se necessário */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .slide {
+        padding: 20px;
+        margin: 10px auto;
+    }
+
+    .slide h2 {
+        font-size: 1.4em;
+    }
+
+    .slide h3 {
+        font-size: 1.2em;
+    }
+
+    .topic-navigation button {
+        font-size: 0.9em;
+        padding: 10px 15px;
+        flex-grow: 1;
+        max-width: 100%; /* Botões de navegação dos tópicos ocupam a largura total em telas pequenas */
+    }
+
+    .nav-btn {
+        width: 45%; /* Um pouco menor para evitar quebras */
+        font-size: 0.95em;
+        padding: 10px 15px;
+    }
+
+    .video-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 15px;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    .slide {
+        padding: 15px;
+    }
+
+    .slide h2 {
+        font-size: 1.2em;
+    }
+
+    .slide h3 {
+        font-size: 1.1em;
+    }
+
+    .topic-navigation button {
+        font-size: 0.85em;
+        padding: 8px 12px;
+    }
+
+    .nav-btn {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+
+    .video-button {
+        font-size: 0.95em;
+        padding: 8px 15px;
+    }
+}

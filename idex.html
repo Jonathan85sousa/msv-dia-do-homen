@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSV - Dia Do Homen</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <header class="header">
+        <img src="./img/logo.svg" alt="Sua Logo da Empresa" class="logo">
+        <h1>Saúde em Foco: Informações Importantes para o Dia do Homen</h1>
+    </header>
+
+    <main id="app-content">
+        <section id="slide-intro" class="slide active">
+            <h2>Bem-vindo(a) ao Saúde em Foco!</h2>
+            <p>Toque nas opções abaixo para saber mais sobre temas essenciais para sua saúde e bem-estar.</p>
+            <nav class="topic-navigation">
+                <button data-target="slide-alcoolismo">Alcoolismo</button>
+                <button data-target="slide-drogas">Drogas</button>
+                <button data-target="slide-dst">ISTs</button>
+                <button data-target="slide-tabagismo">Tabagismo</button>
+                <button data-target="slide-epis">Uso de EPIs</button>
+                <button data-target="slide-hipertensao">Hipertensão Arterial</button>
+                <button data-target="slide-final">Conclusão</button>
+            </nav>
+        </section>
+
+        <section id="slide-alcoolismo" class="slide">
+            <h2 class="topic-title">Alcoolismo: Mais que um Hábito</h2>
+            <div class="topic-image">
+                <img src="./img/acool1.jpg" alt="Sinal de 'Pare' com garrafas de álcool ao fundo" loading="lazy">
+            </div>
+            <p>O alcoolismo é uma doença crônica que afeta o controle sobre o consumo de álcool, levando a sérias consequências para a saúde e a vida.</p>
+            <h3>Informações Importantes:</h3>
+            <ul>
+                <li><strong>Impacto na Saúde:</strong> O álcool afeta quase todos os órgãos, causando doenças hepáticas (cirrose), problemas cardíacos, danos cerebrais e diversos tipos de câncer.</li>
+                <li><strong>Consequências Sociais:</strong> Contribui para acidentes (trânsito e trabalho), violência doméstica e perda de produtividade.</li>
+                <li><strong>Tratamento:</strong> A recuperação é possível com desintoxicação, terapia, medicação e grupos de apoio como os Alcoólicos Anônimos (AA).</li>
+            </ul>
+            <details>
+                <summary>Curiosidades e Números (Brasil):</summary>
+                <ul>
+                    <li><strong>Mortes no Brasil:</strong> Estimativas apontam que o uso nocivo do álcool é responsável por milhares de mortes no Brasil anualmente, impactando diretamente a expectativa de vida.</li>
+                    <li><strong>Início Precoce:</strong> Estudos da FIOCRUZ e outras instituições mostram que a idade de início do consumo de álcool entre adolescentes brasileiros tem se tornado cada vez mais precoce, um fator de risco para o desenvolvimento da dependência.</li>
+                    <li><strong>O "Fio da Navalha":</strong> Beber para curar ressaca é um mito e pode piorar a desidratação e prolongar a recuperação.</li>
+                </ul>
+            </details>
+            <div class="video-link-container">
+                <p>Assista para saber mais:</p>
+                <a href="https://www.youtube.com/watch?v=JZuAiVz6oCM" target="_blank" class="video-button">Vídeo: Alcoolismo e os Jovens</a>
+                <p class="note">Necessita de internet para assistir.</p>
+            </div>
+            <p class="action-tip">Se você ou alguém que você conhece precisa de ajuda, procure um serviço de saúde ou um grupo de apoio.</p>
+        </section>
+
+        <section id="slide-drogas" class="slide">
+            <h2 class="topic-title">Drogas Ilícitas: Riscos e Consequências</h2>
+            <div class="topic-image">
+                <img src="./img/drogas.jpg" alt="Mãos tentando alcançar comprimidos" loading="lazy">
+            </div>
+            <p>O uso de drogas ilícitas é o consumo prejudicial ou perigoso de substâncias psicoativas. O Brasil enfrenta desafios significativos relacionados ao uso e tráfico.</p>
+            <h3>Informações Importantes:</h3>
+            <ul>
+                <li><strong>Impacto no Cérebro:</strong> Afetam diretamente o sistema de recompensa do cérebro, causando dependência e alterações permanentes.</li>
+                <li><strong>Tipos Comuns:</strong> Estimulantes (cocaína, crack), depressores (heroína, benzodiazepínicos), alucinógenos (LSD, ecstasy) e cannabis.</li>
+                <li><strong>Risco de Overdose:</strong> Grande risco, especialmente com opioides, pela depressão respiratória. Drogas contaminadas aumentam esse perigo.</li>
+                <li><strong>Consequências Legais:</strong> Posse, uso ou tráfico de drogas ilícitas acarretam severas penalidades.</li>
+            </ul>
+            <details>
+                <summary>Curiosidades e Números (Brasil):</summary>
+                <ul>
+                    <li><strong>Substância Mais Usada:</strong> A Cannabis (maconha) é a droga ilícita mais consumida no Brasil, seguida de perto pela cocaína e o crack em algumas regiões. (Fonte: Fiocruz, Levantamentos Nacionais recentes).</li>
+                    <li><strong>Impacto na Saúde Pública:</strong> O SUS oferece tratamento para usuários de drogas (CAPS AD - Centros de Atenção Psicossocial Álcool e Drogas), mostrando a dimensão do problema de saúde pública.</li>
+                    <li><strong>Novas Substâncias Psicoativas (NSPs):</strong> O surgimento de novas drogas sintéticas (NSPs) representa um desafio crescente para a saúde e segurança pública no Brasil.</li>
+                </ul>
+            </details>
+            <div class="video-link-container">
+                <p>Assista para saber mais:</p>
+                <a href="https://www.youtube.com/watch?v=Yb0ipXzkgpY" target="_blank" class="video-button">Vídeo: Os Riscos das Drogas</a>
+                <p class="note">Necessita de internet para assistir.</p>
+            </div>
+            <p class="action-tip">Não se exponha a riscos. Se precisar de apoio, busque os serviços de saúde locais.</p>
+        </section>
+
+        <section id="slide-dst" class="slide">
+            <h2 class="topic-title">ISTs (Infecções Sexualmente Transmissíveis): Proteja-se!</h2>
+            <div class="topic-image">
+                <img src="./img/camisinha1.jpg" alt="Campanha de prevenção a ISTs com preservativos e informações" loading="lazy">
+            </div>
+            <p>ISTs são infecções transmitidas principalmente pelo contato sexual. Muitas são assintomáticas, o que facilita a transmissão.</p>
+            <h3>Informações Importantes:</h3>
+            <ul>
+                <li><strong>ISTs Comuns:</strong> Clamídia, Gonorreia, Sífilis, HIV, Herpes, HPV (Vírus do Papiloma Humano) e Hepatites B e C.</li>
+                <li><strong>Prevenção:</strong> Abstinenância, uso consistente e correto de **preservativos** e testagem regular são essenciais.</li>
+                <li><strong>Tratamento:</strong> Muitas são curáveis (Clamídia, Gonorreia, Sífilis). Virais (HIV, Herpes, HPV) não têm cura, mas podem ser controladas com medicação.</li>
+                <li><strong>Complicações:</strong> Infertilidade, dor crônica, alguns tipos de câncer e aumento do risco de transmissão do HIV.</li>
+            </ul>
+            <details>
+                <summary>Curiosidades e Números (Brasil):</summary>
+                <ul>
+                    <li><strong>Aumento da Sífilis:</strong> O Brasil tem enfrentado um preocupante aumento nos casos de sífilis, incluindo a **sífilis congênita** (transmitida da mãe para o bebê), que causa graves problemas de saúde nos recém-nascidos. (Fonte: Ministério da Saúde, Boletins Epidemiológicos recentes).</li>
+                    <li><strong>Vacina HPV:</strong> A vacina contra o HPV está disponível gratuitamente no SUS para meninos e meninas em faixas etárias específicas, prevenindo o câncer de colo de útero e outras doenças relacionadas ao vírus.</li>
+                    <li><strong>HIV no Brasil:</strong> Apesar da epidemia estabilizada, ainda há cerca de 40 mil novos casos de HIV por ano no Brasil. O SUS oferece tratamento gratuito e de qualidade.</li>
+                </ul>
+            </details>
+            <div class="video-link-container">
+                <p>Assista para saber mais:</p>
+                <a href="https://www.youtube.com/watch?v=fD7ciuJqaGg" target="_blank" class="video-button">Vídeo: Prevenção de ISTs</a>
+                <p class="note">Necessita de internet para assistir.</p>
+            </div>
+            <p class="action-tip">Use preservativo em todas as relações e faça exames regularmente. A prevenção é a melhor forma de se proteger!</p>
+        </section>
+
+        <section id="slide-tabagismo" class="slide">
+            <h2 class="topic-title">Tabagismo: Pare de Fumar, Ganhe Vida!</h2>
+            <div class="topic-image">
+                <img src="./img/cigarros.jpg" alt="Maço de cigarro amassado com cinzas" loading="lazy">
+            </div>
+            <p>Fumar é um dos maiores causadores de doenças e mortes evitáveis no mundo.</p>
+            <h3>Informações Importantes:</h3>
+            <ul>
+                <li><strong>Químicos Tóxicos:</strong> A fumaça do tabaco tem mais de 7.000 substâncias químicas, muitas delas cancerígenas.</li>
+                <li><strong>Riscos à Saúde:</strong> Causa câncer de pulmão, doenças cardíacas, AVC, enfisema, bronquite crônica e muitos outros problemas.</li>
+                <li><strong>Fumaça de Segunda Mão:</strong> Exposição à fumaça de outras pessoas também é extremamente prejudicial.</li>
+                <li><strong>Benefícios ao Parar:</strong> Parar de fumar em qualquer idade melhora significativamente a saúde e reduz os riscos de doenças.</li>
+            </ul>
+            <details>
+                <summary>Curiosidades e Números (Brasil):</summary>
+                <ul>
+                    <li><strong>Queda no Consumo:</strong> O Brasil é um exemplo global na redução do tabagismo, com a prevalência de fumantes adultos caindo drasticamente nas últimas décadas devido a políticas públicas eficazes. (Fonte: INCA, Vigitel).</li>
+                    <li><strong>Leis Antifumo:</strong> O Brasil possui rigorosas leis antifumo que proíbem o fumo em ambientes fechados de uso coletivo e regulamentam a propaganda de produtos de tabaco.</li>
+                    <li><strong>Serviços de Apoio:</strong> O SUS oferece programas gratuitos de tratamento para parar de fumar, com acompanhamento e, se necessário, medicação.</li>
+                </ul>
+            </details>
+            <div class="video-link-container">
+                <p>Assista para saber mais:</p>
+                <a href="https://www.youtube.com/watch?v=pdbqJJRVFZ4" target="_blank" class="video-button">Vídeo: Tabagismo: Causas e Consequências</a>
+                <p class="note">Necessita de internet para assistir.</p>
+            </div>
+            <p class="action-tip">Busque ajuda para parar de fumar! Sua saúde e a de quem você ama agradecem.</p>
+        </section>
+
+        <section id="slide-epis" class="slide">
+            <h2 class="topic-title">Uso de EPIs: Sua Segurança em Primeiro Lugar!</h2>
+            <div class="topic-image">
+                <img src="./img/EPI.jpg" alt="Mãos com luvas de proteção em ambiente industrial" loading="lazy">
+            </div>
+            <p>Equipamentos de Proteção Individual (EPIs) são barreiras essenciais contra acidentes e doenças no ambiente de trabalho.</p>
+            <h3>Informações Importantes:</h3>
+            <ul>
+                <li><strong>Propósito:</strong> Minimizar a exposição a riscos quando outras medidas de segurança não são suficientes.</li>
+                <li><strong>Tipos Comuns:</strong> Óculos de segurança, luvas, capacetes, respiradores, protetores auriculares, calçados de segurança e roupas de alta visibilidade.</li>
+                <li><strong>Treinamento:</strong> É fundamental saber quando, qual e como usar, guardar e inspecionar seu EPI.</li>
+                <li><strong>Responsabilidade:</strong> A empresa fornece, e o colaborador é responsável por usar corretamente e reportar defeitos.</li>
+            </ul>
+            <details>
+                <summary>Curiosidades e Números (Brasil):</summary>
+                <ul>
+                    <li><strong>Acidentes de Trabalho:</strong> Milhares de acidentes de trabalho ocorrem anualmente no Brasil, e muitos poderiam ser evitados com o uso correto de EPIs. (Fonte: Ministério do Trabalho e Previdência, dados da Previdência Social).</li>
+                    <li><strong>CIPA:</strong> A Comissão Interna de Prevenção de Acidentes e de Assédio (CIPA) nas empresas brasileiras tem um papel crucial na fiscalização e promoção do uso de EPIs.</li>
+                    <li><strong>Normas Regulamentadoras (NRs):</strong> O uso de EPIs no Brasil é regulamentado por diversas Normas Regulamentadoras (NRs) do Ministério do Trabalho, que estabelecem as obrigações para empregadores e empregados.</li>
+                </ul>
+            </details>
+            <div class="video-link-container">
+                <p>Assista para saber mais:</p>
+                <a href="https://www.youtube.com/watch?v=BfnduVrYFQ8" target="_blank" class="video-button">Vídeo: A Importância do EPI</a>
+                <p class="note">Necessita de internet para assistir.</p>
+            </div>
+            <p class="action-tip">Use seu EPI sempre! É sua proteção e seu direito.</p>
+        </section>
+
+        <section id="slide-hipertensao" class="slide">
+            <h2 class="topic-title">Hipertensão Arterial: O "Assassino Silencioso"</h2>
+            <div class="topic-image">
+                <img src="./img/pressao_alta.jpg" alt="Pessoa medindo a pressão arterial" loading="lazy">
+            </div>
+            <p>Pressão alta é uma condição em que a pressão do sangue nas artérias está constantemente elevada, sobrecarregando o coração e os vasos.</p>
+            <h3>Informações Importantes:</h3>
+            <ul>
+                <li><strong>Sem Sintomas:</strong> Frequentemente não apresenta sintomas, por isso é chamada de "assassino silencioso". Muitos só descobrem ao ter complicações.</li>
+                <li><strong>Riscos:</strong> Aumenta o risco de infarto, AVC, doenças renais, insuficiência cardíaca e problemas de visão.</li>
+                <li><strong>Causas:</strong> Pode ser primária (sem causa definida) ou secundária (por outra doença). Fatores de risco incluem genética, dieta (alto sódio), falta de exercício, obesidade, tabagismo e álcool.</li>
+                <li><strong>Controle:</strong> Mudanças no estilo de vida (dieta saudável, exercícios, controle de peso, menos sal) são cruciais. Medicamentos são frequentemente necessários.</li>
+            </ul>
+            <details>
+                <summary>Curiosidades e Números (Brasil):</summary>
+                <ul>
+                    <li><strong>Alta Prevalência:</strong> A hipertensão afeta cerca de 30% da população adulta brasileira, um percentual significativo que exige atenção à saúde pública. (Fonte: Sociedade Brasileira de Cardiologia, Ministério da Saúde - Vigitel).</li>
+                    <li><strong>Importância da Medição:</strong> Medir a pressão arterial regularmente é a única forma de diagnosticar a hipertensão precocemente.</li>
+                    <li><strong>Prevenção</strong> adote um estilo de vida saudável que inclui uma dieta equilibrada com pouco sal, prática regular de atividade física, abandono do tabagismo e moderação no consumo de álcool, além de gerenciar o estresse e manter um peso adequado. </li>
+                </ul>
+            </details>
+            <div class="video-link-container">
+                <p>Assista para saber mais:</p>
+                <a href="https://www.youtube.com/watch?v=MZDFdLSL6cA" target="_blank" class="video-button">Vídeo: Entenda a Hipertensão</a>
+                <p class="note">Necessita de internet para assistir.</p>
+            </div>
+            <p class="action-tip">Meça sua pressão regularmente e adote um estilo de vida saudável. Cuide do seu coração!</p>
+        </section>
+
+        <section id="slide-final" class="slide">
+            <h2>Cuidar da Sua Saúde é Cuidar da Sua Vida!</h2>
+            <p>Esperamos que estas informações ajudem você a tomar decisões mais conscientes e saudáveis.</p>
+            <p>Agradecemos a atenção e convidamos você a sempre buscar informações e cuidar de si.</p>
+            <p class="signature">MSV Adventure</p>
+            <button data-target="slide-intro" class="back-to-start">Voltar ao Início</button>
+        </section>
+
+    </main>
+
+    <div class="navigation-buttons">
+        <button id="prev-btn" class="nav-btn">Anterior</button>
+        <button id="next-btn" class="nav-btn">Próximo</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
